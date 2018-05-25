@@ -1,0 +1,35 @@
+template_defaults: &defaults
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  port: 5432
+  pool: 20
+  timeout: 60000
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: template_prod
+  username: template_prod_user
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: 5432
+  pool: 20
+  timeout: 60000
+
+staging:
+  <<: *defaults
+  database: template_staging
+  username: template_staging_user
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  encoding: utf8
+
+development:
+  <<: *defaults
+  database: template_dev
+  username: template_user
+
+test:
+  <<: *defaults
+  database: template_test
