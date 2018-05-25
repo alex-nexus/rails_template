@@ -386,8 +386,7 @@ DEPENDENCIES
   flutie
   font-awesome-rails
   friendly_id
-  haml (= 5.0)
-  haml-rails (= 1.0)
+  haml-rails
   has_scope
   kaminari
   launchy

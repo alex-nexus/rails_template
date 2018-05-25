@@ -1,0 +1,10 @@
+!!!
+%html{:lang => "en"}
+  %head= render 'layouts/head'
+  %body{class: body_class}
+    #wrapper
+      #main-content
+        = render 'layouts/nav_bar'
+        = yield
+        = render 'layouts/footer'
+      = render 'layouts/common_footer'

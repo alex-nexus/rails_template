@@ -1,0 +1,18 @@
+%meta(charset="utf-8")
+/ Uncomment to make IE8 render like IE7
+%meta(http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1")
+/ Set the viewport width to device width for mobile
+%meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+%meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+
+%meta{name: "google-site-verification", content: "Ynz9qyg3rruOyuXDgYpG9dz3CGrenKXbEznTrzg_-vI"}
+
+= display_meta_tags
+= favicon_link_tag
+
+= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Montserrat'
+= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+= csrf_meta_tag
+
+= yield :linked_data_json
