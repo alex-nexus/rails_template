@@ -7,6 +7,7 @@ gem 'active_model_serializers'
 gem 'acts-as-taggable-on'
 gem 'addressable'
 gem 'awesome_print'
+gem 'aws-sdk-sqs'
 gem 'bootstrap-sass'
 gem 'bullet'
 gem 'breadcrumbs_on_rails'
@@ -34,7 +35,7 @@ gem 'mini_racer', platforms: :ruby #v8
 gem 'nokogiri'
 gem 'paper_trail'
 gem 'parallel'
-gem 'pg'
+gem 'pg', '~> 0.20'
 gem 'puma'
 gem 'rails_admin'
 gem 'ransack'
@@ -52,4 +53,22 @@ gem 'whenever'
 group :development, :test do
   gem 'byebug'
   gem 'spring'
+end
+
+group :development do
+  gem 'annotate'
+  gem 'better_errors'
+  gem 'brakeman', require: false
+  gem 'rails-erd', require: false
+  gem 'rubocop', require: false
+  gem 'spring'
+  gem 'web-console'
+end
+
+group :test do
+  gem 'rails-controller-testing'
+  gem 'rspec-collection_matchers'
+  gem 'rspec-expectations'
+  gem 'rspec-rails'
+  gem 'simplecov', require: false
 end
