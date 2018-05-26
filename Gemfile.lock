@@ -81,7 +81,6 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
     brakeman (4.1.1)
-    breadcrumbs_on_rails (3.0.1)
     builder (3.2.3)
     bullet (5.7.5)
       activesupport (>= 3.0.0)
@@ -447,7 +446,6 @@ DEPENDENCIES
   better_errors
   bootstrap-sass
   brakeman
-  breadcrumbs_on_rails
   bullet
   byebug
   cancancan
@@ -471,7 +469,6 @@ DEPENDENCIES
   memoist
   meta-tags
   mini_racer
-  nokogiri
   paper_trail
   parallel
   pg (~> 0.20)
@@ -486,7 +483,6 @@ DEPENDENCIES
   rspec-expectations
   rspec-rails
   rubocop
-  sass-rails
   scientist
   shoryuken
   simplecov

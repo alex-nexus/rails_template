@@ -10,7 +10,7 @@ gem 'awesome_print'
 gem 'aws-sdk-sqs'
 gem 'bootstrap-sass'
 gem 'bullet'
-gem 'breadcrumbs_on_rails'
+# gem 'breadcrumbs_on_rails'
 gem 'cancancan'
 gem 'carrierwave'
 gem 'config'
@@ -18,8 +18,6 @@ gem 'countries'
 gem 'devise'
 gem 'draper'
 gem 'email_validator'
-gem 'factory_bot_rails'
-gem 'faker'
 gem 'flutie'
 gem 'font-awesome-rails'
 gem 'friendly_id'
@@ -32,14 +30,14 @@ gem 'makara'
 gem 'memoist'
 gem 'meta-tags'
 gem 'mini_racer', platforms: :ruby #v8
-gem 'nokogiri'
+# gem 'nokogiri'
 gem 'paper_trail'
 gem 'parallel'
 gem 'pg', '~> 0.20'
 gem 'puma'
 gem 'rails_admin'
 gem 'ransack'
-gem 'sass-rails'
+# gem 'sass-rails'
 gem 'scientist'
 gem 'shoryuken'
 gem 'sitemap_generator'
@@ -52,6 +50,8 @@ gem 'whenever'
 
 group :development, :test do
   gem 'byebug'
+  gem 'factory_bot_rails'
+  gem 'faker'
   gem 'spring'
 end
 
@@ -61,7 +61,6 @@ group :development do
   gem 'brakeman', require: false
   gem 'rails-erd', require: false
   gem 'rubocop', require: false
-  gem 'spring'
   gem 'web-console'
 end
 
