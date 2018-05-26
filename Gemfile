@@ -18,6 +18,7 @@ gem 'countries'
 gem 'devise'
 gem 'draper'
 gem 'email_validator'
+gem 'fast_jsonapi'
 gem 'flutie'
 gem 'font-awesome-rails'
 gem 'friendly_id'
@@ -70,4 +71,5 @@ group :test do
   gem 'rspec-expectations'
   gem 'rspec-rails'
   gem 'simplecov', require: false
+  gem 'timecop'
 end
