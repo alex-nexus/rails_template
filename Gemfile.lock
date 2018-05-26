@@ -384,6 +384,9 @@ GEM
       aws-sdk-core (>= 2)
       concurrent-ruby
       thor
+    simple_form (3.5.0)
+      actionpack (> 4, < 5.2)
+      activemodel (> 4, < 5.2)
     simplecov (0.15.1)
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
@@ -493,6 +496,7 @@ DEPENDENCIES
   rubocop
   scientist
   shoryuken
+  simple_form
   simplecov
   sitemap_generator
   slack-notifier
