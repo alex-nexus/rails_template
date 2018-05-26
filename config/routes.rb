@@ -6,5 +6,5 @@ Rails.application.routes.draw do
 
   root to: 'landing#index'
 
-  mount RailsAdmin::Engine => '/command_center', as: 'rails_admin'
+  mount RailsAdmin::Engine => '/rails_admin', as: 'rails_admin'
 end
