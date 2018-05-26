@@ -40,6 +40,7 @@ gem 'rails_admin'
 gem 'ransack'
 # gem 'sass-rails'
 gem 'scientist'
+gem 'slack-notifier'
 gem 'shoryuken'
 gem 'sitemap_generator'
 gem 'state_machines'
@@ -53,6 +54,7 @@ group :development, :test do
   gem 'byebug'
   gem 'factory_bot_rails'
   gem 'faker'
+  gem 'letter_opener'
   gem 'spring'
 end
 

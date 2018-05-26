@@ -223,6 +223,8 @@ GEM
     kaminari-core (1.1.1)
     launchy (2.4.3)
       addressable (~> 2.3)
+    letter_opener (1.6.0)
+      launchy (~> 2.2)
     libv8 (6.3.292.48.1)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -390,6 +392,7 @@ GEM
     sitemap_generator (6.0.1)
       builder (~> 3.0)
     sixarm_ruby_unaccent (1.2.0)
+    slack-notifier (2.3.2)
     spring (2.0.2)
       activesupport (>= 4.2)
     sprockets (3.7.1)
@@ -468,6 +471,7 @@ DEPENDENCIES
   has_scope
   kaminari
   launchy
+  letter_opener
   listen
   makara
   memoist
@@ -491,6 +495,7 @@ DEPENDENCIES
   shoryuken
   simplecov
   sitemap_generator
+  slack-notifier
   spring
   state_machines
   state_machines-activerecord
