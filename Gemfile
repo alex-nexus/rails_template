@@ -64,7 +64,6 @@ group :development do
   gem 'better_errors'
   gem 'brakeman', require: false
   gem 'rails-erd', require: false
-  gem 'rubocop', require: false
   gem 'web-console'
 end
 
