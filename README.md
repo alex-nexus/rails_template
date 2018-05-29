@@ -13,6 +13,9 @@ rake reset
 rake haml:erb2haml
 ```
 
+* How to fork and get updates from upstream
+https://stackoverflow.com/questions/3903817/pull-new-updates-from-original-github-repository-into-forked-github-repository?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+
 1. fork git@github.com:alex-nexus/rails_template.git
 2. on github, rename the project to new app
 3.
