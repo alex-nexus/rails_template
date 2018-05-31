@@ -1,3 +1,16 @@
+GIT
+  remote: git://github.com/elasticsearch/elasticsearch-ruby.git
+  revision: 5acc04e47f52e763bf72272de5a98feca9ebc596
+  specs:
+    elasticsearch (7.0.0.pre)
+      elasticsearch-api (= 7.0.0.pre)
+      elasticsearch-transport (= 7.0.0.pre)
+    elasticsearch-api (7.0.0.pre)
+      multi_json
+    elasticsearch-transport (7.0.0.pre)
+      faraday
+      multi_json
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -18,6 +31,8 @@ GEM
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    actionpack-action_caching (1.2.0)
+      actionpack (>= 4.0.0, < 6)
     actionview (5.1.4)
       activesupport (= 5.1.4)
       builder (~> 3.1)
@@ -49,6 +64,7 @@ GEM
       tzinfo (~> 1.1)
     acts-as-taggable-on (5.0.0)
       activerecord (>= 4.2.8)
+    acts_as_votable (0.11.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     annotate (2.7.3)
@@ -75,9 +91,10 @@ GEM
       erubi (>= 1.0.0)
       rack (>= 0.9.0)
     bindex (0.5.0)
-    bootstrap-sass (3.3.7)
-      autoprefixer-rails (>= 5.2.1)
-      sass (>= 3.3.4)
+    bootstrap (4.1.1)
+      autoprefixer-rails (>= 6.0.3)
+      popper_js (>= 1.12.9, < 2)
+      sass (>= 3.5.2)
     brakeman (4.3.0)
     builder (3.2.3)
     bullet (5.7.5)
@@ -93,6 +110,8 @@ GEM
       activesupport
     choice (0.2.0)
     chronic (0.10.2)
+    code_analyzer (0.4.8)
+      sexp_processor
     coderay (1.1.2)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
@@ -112,6 +131,7 @@ GEM
       sixarm_ruby_unaccent (~> 1.1)
       unicode_utils (~> 1.4)
     crass (1.0.4)
+    dalli (2.7.8)
     deep_merge (1.2.1)
     devise (4.4.3)
       bcrypt (~> 3.0)
@@ -154,8 +174,6 @@ GEM
       dry-equalizer (~> 0.2)
       dry-logic (~> 0.4, >= 0.4.0)
       dry-types (~> 0.12.0)
-    email_validator (1.6.0)
-      activemodel
     erubi (1.7.1)
     erubis (2.7.0)
     execjs (2.7.0)
@@ -166,6 +184,8 @@ GEM
       railties (>= 3.0.0)
     faker (1.8.7)
       i18n (>= 0.7)
+    faraday (0.15.2)
+      multipart-post (>= 1.2, < 3)
     fast_jsonapi (1.2)
       activesupport (>= 4.2)
     ffi (1.9.23)
@@ -174,19 +194,20 @@ GEM
       railties (>= 3.2, < 6.0)
     friendly_id (5.2.4)
       activerecord (>= 4.0.0)
+    geocoder (1.4.9)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
     haml-rails (1.0.0)
-      actionpack (= 4.2.5.2)
+      actionpack (>= 4.0.1)
       activesupport (>= 4.0.1)
       haml (>= 4.0.6, < 6.0)
       html2haml (>= 1.0.1)
       railties (>= 4.0.1)
     has_scope (0.7.2)
-      actionpack (= 4.2.5.2)
+      actionpack (>= 4.1)
       activesupport (>= 4.1)
     html2haml (2.2.0)
       erubis (~> 2.7.0)
@@ -236,7 +257,7 @@ GEM
       activerecord (>= 3.0.0)
     memoist (0.16.0)
     meta-tags (2.9.0)
-      actionpack (= 4.2.5.2)
+      actionpack (>= 3.2.0, < 5.3)
     method_source (0.9.0)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
@@ -248,6 +269,8 @@ GEM
     minitest (5.11.3)
     money (6.11.3)
       i18n (>= 0.6.4, < 1.1)
+    multi_json (1.13.1)
+    multipart-post (2.0.0)
     nested_form (0.3.2)
     nio4r (2.3.1)
     nokogiri (1.8.2)
@@ -260,6 +283,7 @@ GEM
     pg (0.21.0)
     polyamorous (1.3.3)
       activerecord (>= 3.0)
+    popper_js (1.12.9)
     public_suffix (3.0.2)
     puma (3.11.4)
     rack (2.0.5)
@@ -307,6 +331,14 @@ GEM
       rails (>= 4.0, < 6)
       remotipart (~> 1.3)
       sass-rails (>= 4.0, < 6)
+    rails_best_practices (1.19.2)
+      activesupport
+      code_analyzer (>= 0.4.8)
+      erubis
+      i18n
+      json
+      require_all (~> 2.0)
+      ruby-progressbar
     railties (5.1.4)
       actionpack (= 5.1.4)
       activesupport (= 5.1.4)
@@ -326,9 +358,14 @@ GEM
     remotipart (1.4.2)
     request_store (1.4.1)
       rack (>= 1.4)
+    require_all (2.0.0)
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
+    rspec (3.7.0)
+      rspec-core (~> 3.7.0)
+      rspec-expectations (~> 3.7.0)
+      rspec-mocks (~> 3.7.0)
     rspec-collection_matchers (1.1.3)
       rspec-expectations (>= 2.99.0.beta1)
     rspec-core (3.7.1)
@@ -347,8 +384,11 @@ GEM
       rspec-expectations (~> 3.7.0)
       rspec-mocks (~> 3.7.0)
       rspec-support (~> 3.7.0)
+    rspec-rerun (1.1.0)
+      rspec (~> 3.0)
     rspec-support (3.7.1)
     ruby-graphviz (1.2.3)
+    ruby-progressbar (1.9.0)
     ruby_dep (1.5.0)
     ruby_parser (3.11.0)
       sexp_processor (~> 4.9)
@@ -399,6 +439,8 @@ GEM
       state_machines-activemodel (>= 0.5.0)
     state_machines-audit_trail (2.0.1)
       state_machines
+    stripe (3.15.0)
+      faraday (~> 0.10)
     temple (0.8.0)
     thor (0.20.0)
     thread_safe (0.3.6)
@@ -430,14 +472,16 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  actionpack-action_caching
   active_model_serializers
   acts-as-taggable-on
+  acts_as_votable (~> 0.11.1)
   addressable
   annotate
   awesome_print
   aws-sdk-sqs
   better_errors
-  bootstrap-sass
+  bootstrap (~> 4.1.1)
   brakeman
   bullet
   byebug
@@ -445,17 +489,22 @@ DEPENDENCIES
   carrierwave
   config
   countries
+  dalli
   devise
   draper
-  email_validator
+  elasticsearch!
   factory_bot_rails
   faker
+  faraday
   fast_jsonapi
   flutie
   font-awesome-rails
   friendly_id
+  geocoder
   haml-rails
   has_scope
+  i18n
+  jquery-rails
   kaminari
   launchy
   letter_opener
@@ -464,6 +513,7 @@ DEPENDENCIES
   memoist
   meta-tags
   mini_racer
+  money
   paper_trail
   parallel
   pg (~> 0.20)
@@ -472,11 +522,13 @@ DEPENDENCIES
   rails-controller-testing
   rails-erd
   rails_admin
+  rails_best_practices
   rake
   ransack
   rspec-collection_matchers
   rspec-expectations
   rspec-rails
+  rspec-rerun
   scientist
   shoryuken
   simple_form
@@ -487,6 +539,7 @@ DEPENDENCIES
   state_machines
   state_machines-activerecord
   state_machines-audit_trail
+  stripe
   timecop
   turbolinks
   uglifier
