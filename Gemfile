@@ -10,6 +10,7 @@ gem 'acts_as_votable', '~> 0.11.1'
 gem 'addressable'
 gem 'awesome_print'
 gem 'aws-sdk-sqs'
+gem 'bootsnap', require: false
 gem 'bootstrap', '~> 4.1.1'
 gem 'bullet'
 # gem 'breadcrumbs_on_rails'
