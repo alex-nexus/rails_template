@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   mount RailsAdmin::Engine => '/rails_admin', as: 'rails_admin'
 
+  resources :landing, only: 'index'
+
   namespace :admin do
   end
 end
