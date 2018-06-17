@@ -28,7 +28,7 @@ staging:
 development:
   <<: *defaults
   database: template_dev
-  username: template_user
+  username: alexchen
 
 test:
   <<: *defaults

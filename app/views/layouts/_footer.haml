@@ -1,0 +1,14 @@
+%footer.footer.visible-lg
+  .row
+    .col-md-4
+      %nav
+        %ul.nav.navbar-nav
+          -# - PagesController::PAGES.each do |page|
+          -#   %li= link_to page.titleize, page_path(page), class: 'no_link_style'
+
+  .clearfix
+  .copyright-text
+    .text-center
+      &copy;2018 Alex Chen
+
+= render 'shared/back_top'

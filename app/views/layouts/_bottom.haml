@@ -1,0 +1,9 @@
+#login-box
+  %i.fa.fa-remove.login-toggle
+  = render 'shared/login_form'
+  = render 'shared/sign_up_form'
+
+= render 'shared/analytics/google'
+= javascript_include_tag 'application', 'data-turbolinks-track' => true
+
+= yield :page_javascript

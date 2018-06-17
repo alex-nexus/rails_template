@@ -25,7 +25,7 @@ gem 'elasticsearch', git: 'git://github.com/elasticsearch/elasticsearch-ruby.git
 gem 'faraday'
 gem 'fast_jsonapi'
 gem 'flutie'
-gem 'font-awesome-rails'
+gem 'font-awesome-sass'
 gem 'friendly_id'
 gem 'geocoder'
 gem 'haml-rails'
@@ -64,6 +64,7 @@ gem 'uglifier'
 gem 'whenever'
 
 group :development, :test do
+  gem 'binding_of_caller'
   gem 'byebug'
   gem 'factory_bot_rails'
   gem 'faker'
