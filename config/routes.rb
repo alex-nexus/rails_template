@@ -7,4 +7,7 @@ Rails.application.routes.draw do
   root to: 'landing#index'
 
   mount RailsAdmin::Engine => '/rails_admin', as: 'rails_admin'
+
+  namespace :admin do
+  end
 end
