@@ -24,13 +24,26 @@ git clone git@github.com:alex-nexus/rails_template.git NEW_APP_NAME
 ```
 
 4. rename
+create a new repo
+```
+git clone git@github.com:alex-nexus/rails_template.git NEW_APP_NAME
+```
+remove entry "origin" in /.git/config
+```
+git remote add origin git@github.com:alex-nexus/bright_escrow.git
+```
+
 application.rb rename RailsTemplate to NEW_APP_NAME
-database.yal rename template_ to new_app_name_
+database.yml rename template_ to new_app_name_
+
+```
+git push -u origin master
+```
 
 5. go to the forked repo
 ```
 git remote add upstream git@github.com:alex-nexus/rails_template.git
-git fetch upstream      
+git fetch upstream
 git merge upstream/master
 git push origin master
 ```
