@@ -2,8 +2,7 @@
 %html
   %head= render 'layouts/admin/head'
   %body.fixed-header.horizontal-menu.horizontal-app-menu.dashboard{class: body_class}
-    = render 'layouts/nav/admin'
     .container
       .row
         .col-md-12= yield
-    = render 'layouts/common_footer'
+    = render 'layouts/admin/footer'
