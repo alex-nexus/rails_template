@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   resources :landing, only: 'index'
 
   namespace :admin do
+    resources :dashboard, only: 'index'
   end
 end
