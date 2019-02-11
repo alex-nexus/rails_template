@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'rails', '5.1.4'
+gem 'rails', '5.2.2'
 gem 'rake'
 
 gem 'actionpack-action_caching'
 gem 'active_model_serializers'
+gem 'activejob'
 gem 'acts-as-taggable-on'
 gem 'acts_as_votable', '~> 0.11.1'
 gem 'addressable'

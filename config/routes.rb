@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/rails_admin', as: 'rails_admin'
 
   resources :landing, only: 'index'
+  resources :users
 
   namespace :admin do
     resources :dashboard, only: 'index'
