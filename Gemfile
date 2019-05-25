@@ -12,7 +12,7 @@ gem 'addressable'
 gem 'awesome_print'
 gem 'aws-sdk-sqs'
 gem 'bootsnap', require: false
-gem 'bootstrap', '~> 4.1.1'
+gem "bootstrap", ">= 4.3.1"
 gem 'bullet'
 # gem 'breadcrumbs_on_rails'
 gem 'cancancan'
