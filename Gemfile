@@ -62,6 +62,7 @@ gem 'state_machines-audit_trail'
 gem 'stripe'
 gem 'turbolinks'
 gem 'uglifier'
+gem 'vueonrails'
 gem 'webpacker', '~> 4.x'
 gem 'whenever'
 

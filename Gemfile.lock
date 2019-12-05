@@ -481,6 +481,7 @@ GEM
       execjs (>= 0.3.0, < 3)
     unicode_utils (1.4.0)
     uniform_notifier (1.12.1)
+    vueonrails (0.3.0)
     warden (1.2.8)
       rack (>= 2.0.6)
     web-console (3.7.0)
@@ -576,6 +577,7 @@ DEPENDENCIES
   timecop
   turbolinks
   uglifier
+  vueonrails
   web-console
   webpacker (~> 4.x)
   whenever
