@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '6.0.3'
+gem 'rails', '5.2.2'
 gem "rake", ">= 12.3.3"
 
 gem 'actionpack-action_caching'
@@ -26,7 +26,7 @@ gem 'elasticsearch'
 gem 'faraday'
 gem 'fast_jsonapi'
 gem 'flutie'
-gem 'font-awesome-sass'
+gem 'font-awesome-rails'
 gem 'friendly_id'
 gem 'geocoder'
 gem 'haml-rails'
