@@ -47,3 +47,8 @@ git fetch upstream
 git merge upstream/master
 git push origin master
 ```
+
+6. Good reference:
+awesome-rails: https://github.com/gramantin/awesome-rails
+zen-rails-security-checklist: https://github.com/brunofacca/zen-rails-security-checklist
+Rails Best practice: https://rails-bestpractices.com/

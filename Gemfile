@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails', '5.2.2'
-gem 'rake'
+gem 'rails', '6.0.3'
+gem "rake", ">= 12.3.3"
 
 gem 'actionpack-action_caching'
 gem 'active_model_serializers'
@@ -22,7 +22,7 @@ gem 'countries'
 gem 'dalli'
 gem 'devise'
 gem 'draper'
-gem 'elasticsearch', git: 'git://github.com/elasticsearch/elasticsearch-ruby.git'
+gem 'elasticsearch'
 gem 'faraday'
 gem 'fast_jsonapi'
 gem 'flutie'
@@ -43,18 +43,18 @@ gem 'meta-tags'
 gem 'mini_racer', platforms: :ruby #v8
 gem 'money'
 # gem 'mui-sass'
-# gem 'nokogiri'
+gem "nokogiri", ">= 1.10.8"
 gem 'paper_trail'
 gem 'parallel'
 gem 'pg', '~> 0.20'
-gem 'puma'
+gem "puma", ">= 3.12.4"
 gem 'rails_admin'
 gem 'ransack'
 # gem 'sass-rails'
 gem 'scientist'
 gem 'slack-notifier'
 gem 'shoryuken'
-gem 'simple_form'
+gem "simple_form", ">= 5.0.0"
 gem 'sitemap_generator'
 gem 'state_machines'
 gem 'state_machines-activerecord'
