@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
+git_source(:github) { |repo| 'https://github.com/#{repo}.git' }
+
+ruby '2.7.1'
 
 gem 'rails', '5.2.2'
-gem "rake", ">= 12.3.3"
+gem 'rake', '>= 12.3.3'
 
 gem 'actionpack-action_caching'
 gem 'active_model_serializers'
@@ -12,7 +15,7 @@ gem 'addressable'
 gem 'awesome_print'
 gem 'aws-sdk-sqs'
 gem 'bootsnap', require: false
-gem "bootstrap", ">= 4.3.1"
+gem 'bootstrap', '>= 4.3.1'
 gem 'bullet'
 # gem 'breadcrumbs_on_rails'
 gem 'cancancan'
@@ -33,6 +36,7 @@ gem 'haml-rails'
 gem 'has_scope'
 # gem 'hiredis' # Highly recommended
 gem 'i18n'
+gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'kaminari'
 gem 'launchy'
@@ -40,27 +44,29 @@ gem 'listen'
 gem 'makara'
 gem 'memoist'
 gem 'meta-tags'
-gem 'mini_racer', platforms: :ruby #v8
+# gem 'mini_racer', platforms: :ruby #v8
 gem 'money'
 # gem 'mui-sass'
-gem "nokogiri", ">= 1.10.8"
+gem 'nokogiri', '>= 1.10.8'
 gem 'paper_trail'
 gem 'parallel'
 gem 'pg', '~> 0.20'
-gem "puma", ">= 3.12.4"
+gem 'puma', '>= 3.12.4'
 gem 'rails_admin'
 gem 'ransack'
-# gem 'sass-rails'
+gem 'redis', '~> 4.0'
+gem 'sass-rails', '~> 5.0'
 gem 'scientist'
 gem 'slack-notifier'
 gem 'shoryuken'
-gem "simple_form", ">= 5.0.0"
+gem 'simple_form', '>= 5.0.0'
 gem 'sitemap_generator'
 gem 'state_machines'
 gem 'state_machines-activerecord'
 gem 'state_machines-audit_trail'
 gem 'stripe'
 gem 'turbolinks'
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'uglifier'
 gem 'vueonrails'
 gem 'webpacker', '~> 4.x'
@@ -68,7 +74,7 @@ gem 'whenever'
 
 group :development, :test do
   gem 'binding_of_caller'
-  gem 'byebug'
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'letter_opener'
