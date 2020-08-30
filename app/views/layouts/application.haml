@@ -2,9 +2,8 @@
 %html{lang: 'en'}
   %head= render 'layouts/head'
   %body{class: body_class}
-    .container-fluid
-      = render 'layouts/nav/nav_bar'
-      = render 'shared/flash_notices'
-      .content= yield
+    = render 'layouts/nav/nav_bar'
+    = render 'shared/flash_notices'
+    .content= yield
     = render 'layouts/footer'
     = render 'layouts/bottom'
